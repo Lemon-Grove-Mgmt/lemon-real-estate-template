@@ -1,7 +1,7 @@
 # Client site content
 
 This repo holds one website's content: text, images and settings. The design
-and code come from [lemon-real-estate-engine](https://github.com/AllThingsLemon/lemon-real-estate-engine),
+and code come from [lemon-real-estate-engine](https://github.com/Lemon-Grove-Mgmt/lemon-real-estate-engine),
 which is combined with this repo when the site builds.
 
 **Editing the site?** Go to `https://<your-site>/admin/` and sign in with
@@ -25,7 +25,7 @@ public/                     anything else served as-is (robots.txt, favicon.ico)
 ## New client setup (for the site manager)
 
 Follow the new-client checklist in the engine's
-[setup guide](https://github.com/AllThingsLemon/lemon-real-estate-engine/blob/main/docs/SETUP.md#adding-a-new-client).
+[setup guide](https://github.com/Lemon-Grove-Mgmt/lemon-real-estate-engine/blob/main/docs/SETUP.md#adding-a-new-client).
 In short:
 
 1. Create this repo from the template in the client's GitHub org (private).
