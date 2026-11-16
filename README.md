@@ -24,16 +24,13 @@ public/                     anything else served as-is (robots.txt, favicon.ico)
 
 ## New client setup (for the site manager)
 
-Follow the new-client checklist in the engine's
-[setup guide](https://github.com/Lemon-Grove-Mgmt/lemon-real-estate-engine/blob/main/docs/SETUP.md#adding-a-new-client).
-In short:
+Run the `/real-estate-new-client` skill, or `scripts/new-client.sh`, in
+[lemon-grove-ops](https://github.com/Lemon-Grove-Mgmt/lemon-grove-ops). It
+creates this repo (private, in `Lemon-Grove-Mgmt`) and the Cloudflare Pages
+project in the Lemon Grove account, fills in `site.config.json`, allows the
+site in the shared sign-in Worker and records it in `clients.json`. The
+engine's
+[setup guide](https://github.com/Lemon-Grove-Mgmt/lemon-real-estate-engine/blob/main/docs/SETUP.md#adding-a-new-client)
+covers the same steps by hand.
 
-1. Create this repo from the template in the client's GitHub org (private).
-2. Edit `site.config.json`: `repo` and `siteUrl`. `authUrl` is already set to
-   the shared sign-in Worker.
-3. Approve the **Lemon Real Estate Site Editor** OAuth app in the client's org,
-   or the editor will say it has no access to the repo.
-4. Create the Cloudflare Pages project with the build settings from the guide.
-5. Add the site's hostnames to the sign-in Worker's `ALLOWED_DOMAINS`.
-6. Add the project's deploy hook to the engine's `DEPLOY_HOOKS` secret.
-7. Replace the demo content, or let the client do it in the editor.
+Then replace the demo content, or let the client do it in the editor.
